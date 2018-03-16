@@ -17,14 +17,16 @@ norm_exam <- function(code = "APLE", source = "yahoo", method = "ks") {
     b <- shapiro.test(log_rate)
     #Shapiro-Wilk Test (W Test)
     if (method == "ks") {
-        return(a)
+        print(a)
     }
     else if (method == "sw") {
-        return(b)
+        print(b)
     }
     else {
         qqnorm(log_rate)
         qqline(log_rate)
         #Draw QQ plot to exam.
     }
+    #Print those descriptive statistics.
+    
 }
