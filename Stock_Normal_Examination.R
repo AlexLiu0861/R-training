@@ -1,5 +1,5 @@
 norm_exam <- function(code = "APLE", source = "yahoo", method = "ks") {
-
+#need package "quantmod"
     Origina <- getSymbols(Symbols =  code, src = source, auto.assign = FALSE)
     oridata <- as.data.frame(Origina)
     # Get data of stocks from Yahoo, and change data type(from "zoo" to "data.frame"//
@@ -27,4 +27,5 @@ norm_exam <- function(code = "APLE", source = "yahoo", method = "ks") {
         qqline(log_rate)
         #Draw QQ plot to exam.
     }
+    #There are 3 main method to examine whether a serie is a normal distribution(KS,SW,QQ)
 }
