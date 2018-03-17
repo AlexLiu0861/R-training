@@ -1,5 +1,7 @@
 norm_exam <- function(code = "APLE", source = "yahoo", method = "ks") {
-#need package "quantmod"
+    #need package "quantmod", these arguments all have default value. 
+    #If user doesn't imput anything, this function will get data of Apple Inc. , 
+    #and then analyse it, examine normality with Kolmogorov-Smirnov test.
     Origina <- getSymbols(Symbols =  code, src = source, auto.assign = FALSE)
     oridata <- as.data.frame(Origina)
     # Get data of stocks from Yahoo, and change data type(from "zoo" to "data.frame"//
