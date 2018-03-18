@@ -31,8 +31,8 @@ norm_exam <- function(code = "APLE", source = "yahoo", method = "ks") {
     }
     #There are 3 main method to examine whether a serie is a normal distribution(KS,SW,QQ)
     #Then we need to print those descritive statistics.
-    DS_name <- c("mean", "max", "min", "median", "variance", "std.Dev")
-    DS_value <- c(mean(log_rate), max(log_rate), min(log_rate), median(log_rate), var(log_rate), sd(log_rate))
+    DS_name <- c("mean", "max", "min", "median", "variance", "std.Dev","Skewness","Kurtosis")
+    DS_value <- c(mean(log_rate), max(log_rate), min(log_rate), median(log_rate), var(log_rate), sd(log_rate),skewness(log_rate),kurtosis(log_rate))
     result2 <- cbind(DS_name, DS_value)
 
     hist(log_rate,breaks =100)
