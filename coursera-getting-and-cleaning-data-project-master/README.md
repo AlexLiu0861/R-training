@@ -1,17 +1,10 @@
 # Getting and Cleaning Data - Course Project
 
 This is the course project for the Getting and Cleaning Data Coursera course.
-The R script, `run_analysis.R`, does the following:
-
-1. Download the dataset if it does not already exist in the working directory
-2. Load the activity and feature info
-3. Loads both the training and test datasets, keeping only those columns which
-   reflect a mean or standard deviation
-4. Loads the activity and subject data for each dataset, and merges those
-   columns with the dataset
-5. Merges the two datasets
-6. Converts the `activity` and `subject` columns into factors
-7. Creates a tidy dataset that consists of the average (mean) value of each
-   variable for each subject and activity pair.
-
 The end result is shown in the file `tidy_data.txt`.
+
+Before using this project, you should know that this project cannot download the dataset from AWS itself. Be sure that the original dataset is in your working directory, and it has been unzipped. 
+
+After sourcing this function, it will read the original dataset automaticly, clean and write a new csv file("tidy_data.txt") to contain tidy data. If you want to know the variables, the solution or the whole process, use the Variable Explorer in your IDE(for example, R studio or Visual Studio). The function cleans data with all variables left in variable explorer.
+
+Have fun in coding, my classmates.

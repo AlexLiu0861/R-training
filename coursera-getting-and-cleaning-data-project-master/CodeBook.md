@@ -7,7 +7,7 @@ This code book summarizes the resulting data fields in `tidy_data.txt`.
 * `subject` - The ID of the test subject
 * `activity` - The type of activity performed when the corresponding measurements were taken
 
-## Measurements
+## Measurements used in original dataset
 
 * `tBodyAccMeanX`
 * `tBodyAccMeanY`
@@ -89,7 +89,7 @@ This code book summarizes the resulting data fields in `tidy_data.txt`.
 * `fBodyBodyGyroJerkMagStd`
 * `fBodyBodyGyroJerkMagMeanFreq`
 
-## Activity Labels
+## Labels you will find in the tidy data(tidy_data.txt)
 
 * `WALKING` (value `1`): subject was walking during the test
 * `WALKING_UPSTAIRS` (value `2`): subject was walking up a staircase during the test
